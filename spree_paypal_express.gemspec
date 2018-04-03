@@ -7,7 +7,7 @@ require 'spree_paypal_express/version'
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_paypal_express'
-  s.version     = SpreePayPalExpress::VERSION
+  s.version     = '3.4.0.1'
   s.summary     = 'Adds PayPal Express as a Payment Method to Spree Commerce'
   s.description = s.summary
   s.required_ruby_version = '>= 2.1.0'
@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 3.2.0'
+  s.add_dependency 'spree_core', '>= 3.1.0', '< 4.0'
   s.add_dependency 'paypal-sdk-merchant', '1.116.0'
 
   s.add_development_dependency 'capybara', '~> 2.1'
